@@ -1,5 +1,7 @@
 import * as React from 'react'
 
-export default function Hey({ name }) {
-  return name
+export default class Hey extends React.Component {
+  render() {
+    return <p>{this.props.name}</p>
+  }
 }
