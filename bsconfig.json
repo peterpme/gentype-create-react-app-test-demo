@@ -1,0 +1,40 @@
+{
+  "name": "import-first",
+  "reason": { "react-jsx": 2 },
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": ["reason-react"],
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "flow",
+    "module": "es6",
+    "importPath": "relative",
+    "reasonReactPath": "reason-react/src/ReasonReact.js",
+    "exportInterfaces": false,
+    "shims": {
+      "Js": "Js",
+      "Obj": "Obj",
+      "React": "ReactShim",
+      "ReactEvent": "ReactEvent",
+      "ReasonPervasives": "ReasonPervasives",
+      "ReasonReact": "ReactShim"
+    },
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  }
+}
